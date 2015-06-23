@@ -31,10 +31,6 @@ a {
 	text-decoration: none;
 }
 
-nav a:hover {
-	color: rgb(225,0,0);
-}
-
 nav ul {
 	margin:0;
 	padding:0;
@@ -42,15 +38,19 @@ nav ul {
 }
 
 nav li {
-	font-size: 1.75em;
+	border-color: #000;
+	border-style: outset;
+	border-width: thick;
+}
+
+nav a {
+	display:block;
 	padding-top:10%;
 	padding-bottom: 10%;
 	padding-left: 10%;
 	padding-right: 10%;
+	font-size: 1.75em;	
 	background: rgb(16,16,16);
-	border-color: #000;
-	border-style: outset;
-	border-width: thick;
 }
 
 #navBar {
@@ -66,10 +66,17 @@ nav li:hover {
 	border-style: inset;
 }
 
+nav li:hover a {
+	color: rgb(225,0,0);
+}
+
 .selected {
+	border-style: inset;
+	border-width: thick;
+}
+
+.selected a {
 	color: rgb(255,0,0);
-	/*border-style: inset;
-	border-width: thick;*/
 }
 
 
