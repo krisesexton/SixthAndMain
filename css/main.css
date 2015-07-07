@@ -4,6 +4,7 @@
 	height: 150px;
 	background: rgb(225,0,0) url('../images/BeansSmaller.jpeg') center;
 	background-size: cover;
+	clear: both;
 }
 
 header h1 {
@@ -54,10 +55,11 @@ nav a {
 }
 
 #navBar {
-  width: 20%;
-  display: float;
-  color: #fff;
-  background: #000;
+	display: block;
+	float: left;
+  	width: 20%;
+  	color: #fff;
+  	background: #000;
 }
 
 nav li:hover {
@@ -79,12 +81,54 @@ nav li:hover a {
 	color: rgb(255,0,0);
 }
 
+/*Content*/
+#content {
+	display: block;
+	float: left;
+	width: 80%;
+}
+
+#content p {
+	display: block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-top: 3%;
+	font-size: 1.5em;
+	text-align: right;
+	color: #000;
+}
+
+.news {
+	/*margin: 3%;*/
+	margin-top: 1%;
+	margin-right: 3%;
+	margin-left: 3%;
+	display: block;
+	float: right;
+	width: 200px;
+	border-radius: 20px;
+	clear: right;
+}
+
+#art {
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+#content div:nth-child(even) .news {
+	float: left;
+}
+
+#content div:nth-child(even) p {
+	text-align: left;
+}
 
 /*Footer*/
 .coffee-footer {
 	height: 100px;
 	background: rgb(225,0,0) url('../images/BeansSmaller.jpeg') center;
 	background-size: cover;
+	clear: both;
 }
 
 #address {
@@ -97,7 +141,19 @@ nav li:hover a {
 }
 
 .socMedia {
-	margin-left: 25%;
+	margin-left: 45%;
+	margin-top: 10px;
+}
+
+.socMedia img {
+	display: inline;
 	width: 40px;
 	height: 40px;
+	vertical-align: middle;
+}
+
+.socMedia p {
+	font-size: 1.3em;
+	display: inline;
+	vertical-align: middle;
 }
