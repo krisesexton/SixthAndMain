@@ -156,6 +156,19 @@ nav li:hover a {
 	text-align: left;
 }
 
+.drink {
+	list-style: none;
+	display: float;
+	float: left;
+}
+
+.price {
+	list-style: none;
+	display: float;
+	text-align: right;
+	float: right;
+}
+
 #flavors{
 	width: 74%;
 }
@@ -164,10 +177,40 @@ nav li:hover a {
 	text-align: center;
 }
 
+.menuBoard h3 {
+	clear: both;
+	text-align: center;
+}
+
 /*Content Staff*/
 
 #baristas div {
 	height: 225px;
+}
+
+#overlay {
+  background: rgba(0,0,0,0.9);
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin-top: 5%;
+  margin-right: 5%;
+  display: block;
+  float: right;
+}
+
+#overlay p {
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 5%;
+  background-color: rgb(16,16,16);
+  display: block;
+  float: left;
 }
 
 /*Footer*/
